@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firephoto</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="map"></div>
+
+    <div id="addImageModal" class="modal">
+        <div class="modal-content">
+          <div class="row">
+            <form class="col s12" id="addLocationForm">
+              <div class="row">
+
+                <div class="input-field col s4">
+                  <input type="text" placeholder="Please Enter Locations Name" id="nameField" name="name"  required>
+                  
+                </div>
+
+                <div class="input-field col s4">
+                  <input type="text" placeholder="Latitude" id="latField" name="latitude"  required>
+                  
+                </div>
+
+                <div class="input-field col s4">
+                  <input type="text" placeholder="Longitude" id="lngField" name="longitude"  required>
+                  
+                </div>
+
+              </div>
+
+              <div class="row">
+
+            <div class="input-field col s12">
+              <input type="file" id="imgField" name="locIMG"  accept="image/*">
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="input-field col s12">
+              <input type="submit" id="submitBin" class="col s12 waves-effect waves-light btn-large"  value="Add Location">
+            </div>
+
+          </div>
+
+            </form>
+
+          </div>
+           
+          
+
+
+       </div>
+        <!-- <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div> -->
+      </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="js/leaflet.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+   
+</body>
+</html>
